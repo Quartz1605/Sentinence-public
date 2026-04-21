@@ -1,0 +1,65 @@
+.avatarWrap {
+  display: grid;
+  place-items: center;
+}
+
+.avatarWrapFluid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.avatarStage {
+  width: min(340px, 72vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  background: radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.08), rgba(10, 10, 20, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);
+}
+
+.avatarStageFluid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  transition: transform 260ms ease, opacity 260ms ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.28));
+}
+
+.avatarClosed {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.avatarOpen {
+  transform: scale(1.01);
+  opacity: 0.95;
+}
+
+.avatarWide {
+  transform: scale(1.015);
+  opacity: 1;
+}
+
+.statusPill {
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}

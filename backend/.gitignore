@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+/app/__pycache__/
+/app/auth/__pycache__/
+*.pyc   
+*.pyc
+.env
+app/auth/gmail_secrets.json
+.env

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  
+  /* Distinctive Editorial Theme */
+  --background: #FDFDFB; /* Soft warm white */
+  --foreground: #141413; /* Deep soft black */
+
+  --app-bg: #FDFDFB;
+  --app-fg: #141413;
+
+  /* Surface palette */
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #F3F1EC;
+  --surface-tertiary: #E8E5DF;
+
+  /* Border palette */
+  --border-default: #E1DDD4;
+  --border-subtle: #EFECE6;
+
+  /* Accent palette */
+  --accent-primary: #D73A18; /* Terracotta / Burnt Orange */
+  --accent-secondary: #0F5A5E; /* Deep Teal */
+  --accent-success: #1B8A5A; /* Forest Green */
+  --accent-warning: #D18400; /* Ochre */
+  --accent-danger: #C81E1E; /* Crimson */
+
+  /* Text palette */
+  --text-primary: #141413;
+  --text-secondary: #575550;
+  --text-tertiary: #8A867E;
+  --text-inverse: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --font-serif: var(--font-dm-serif), Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* slate-400 */
+}
+
+* {
+  scroll-behavior: smooth;
+}
